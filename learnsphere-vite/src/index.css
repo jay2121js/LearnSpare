@@ -1,0 +1,23 @@
+@import "tailwindcss";
+/* src/index.css (assuming Tailwind is imported with @tailwind directives) */
+
+@keyframes enrollPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.enroll-pulse {
+  animation: enrollPulse 1.5s ease-in-out infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background-color: #2d3748;
+}

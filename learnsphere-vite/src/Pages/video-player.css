@@ -1,0 +1,80 @@
+.vjs-rewind-button,
+.vjs-forward-button,
+.vjs-play-next-toggle {
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  margin: 0 0.3em;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vjs-rewind-button:hover,
+.vjs-forward-button:hover,
+.vjs-play-next-toggle:hover {
+  background-color: rgba(45, 212, 191, 0.3); /* Teal accent */
+  transform: scale(1.1);
+}
+
+.vjs-rewind-button svg,
+.vjs-forward-button svg,
+.vjs-play-next-toggle svg {
+  width: 1.5em;
+  height: 1.5em;
+  color: white;
+}
+
+.vjs-play-next-toggle {
+  position: relative;
+}
+
+.play-next-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(17, 24, 39, 0.9); /* gray-900 */
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.vjs-rewind-button:hover .tooltip,
+.vjs-forward-button:hover .tooltip,
+.vjs-play-next-toggle:hover .tooltip {
+  opacity: 1;
+}
+
+.video-js-container {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.video-js-container .vjs-tech {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.video-js {
+  width: 100%;
+  height: 100%;
+}
